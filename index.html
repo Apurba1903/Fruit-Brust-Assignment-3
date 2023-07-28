@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <!-- CSS Styles -->
     <style>
         .font-lato {
@@ -62,8 +63,8 @@
                     <div class="flex justify-center items-center relative">
                         <input class="rounded-full w-72 h-10 px-5 text-black" type="text" placeholder="Search here">
                         <button class="absolute right-5">
-                            <svg class="w-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none">
+                            <svg class="w-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none">
                                 <path
                                     d="M20.9998 21L15.8028 15.803M15.8028 15.803C17.2094 14.3965 17.9996 12.4887 17.9996 10.4995C17.9996 8.51035 17.2094 6.60262 15.8028 5.19605C14.3962 3.78947 12.4885 2.99927 10.4993 2.99927C8.51011 2.99927 6.60238 3.78947 5.19581 5.19605C3.78923 6.60262 2.99902 8.51035 2.99902 10.4995C2.99902 12.4887 3.78923 14.3965 5.19581 15.803C6.60238 17.2096 8.51011 17.9998 10.4993 17.9998C12.4885 17.9998 14.3962 17.2096 15.8028 15.803Z"
                                     stroke="#121212" stroke-width="1.5" stroke-linecap="round"
@@ -75,8 +76,100 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main class="lg:px-20">
 
+        <!-- Banner Section -->
+        <section class="relative flex flex-col items-center mt-20 pb-20">
+            <div class="carousel w-full ">
+                <!-- Slider 1 -->
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="/images/banner1.png" class="w-full" />
+                    <div class="absolute rounded-md inset-0 bg-gradient-to-b from-[#121212] to-[#12121200]"></div>
+                    <div class="absolute text-center text-white lg:left-96 pt-24 space-y-6">
+                        <h1 class="text-5xl font-bold">Exotic tastes at your <br> doorstep</h1>
+                        <p>We supply highly quality organic products</p>
+                        <button class="btn border-0 text-white bg-[#F85559]">Shop Now</button>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle bg-black text-white border-0">❮</a>
+                        <a href="#slide2" class="btn btn-circle bg-black text-white border-0">❯</a>
+                    </div>
+
+                </div>
+                <!-- Slider 2 -->
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img class="" src="/images/banner2.png" class="w-full" />
+                    <div class="absolute rounded-md inset-0 bg-gradient-to-b from-[#121212] to-[#12121200]"></div>
+                    <div class="absolute text-center text-white lg:left-96 pt-24 space-y-6">
+                        <h1 class="text-5xl font-bold">Exotic tastes at your <br> doorstep</h1>
+                        <p>We supply highly quality organic products</p>
+                        <button class="btn border-0 text-white bg-[#F85559]">Shop Now</button>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle bg-black text-white border-0">❮</a>
+                        <a href="#slide3" class="btn btn-circle bg-black text-white border-0">❯</a>
+                    </div>
+
+                </div>
+                <!-- Slider 3 -->
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img class="" src="/images/banner3.png" class="w-full" />
+                    <div class="absolute rounded-md inset-0 bg-gradient-to-b from-[#121212] to-[#12121200]"></div>
+                    <div class="absolute text-center text-white lg:left-96 pt-24 space-y-6">
+                        <h1 class="text-5xl font-bold">Exotic tastes at your <br> doorstep</h1>
+                        <p>We supply highly quality organic products</p>
+                        <button class="btn border-0 text-white bg-[#F85559]">Shop Now</button>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle bg-black text-white border-0">❮</a>
+                        <a href="#slide4" class="btn btn-circle bg-black text-white border-0">❯</a>
+                    </div>
+
+                </div>
+                <!-- Slider 4 -->
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="/images/banner4.png" class="w-full" />
+                    <div class="absolute rounded-md inset-0 bg-gradient-to-b from-[#121212] to-[#12121200]"></div>
+                    <div class="absolute text-center text-white lg:left-96 pt-24 space-y-6">
+                        <h1 class="text-5xl font-bold">Exotic tastes at your <br> doorstep</h1>
+                        <p>We supply highly quality organic products</p>
+                        <button class="btn border-0 text-white bg-[#F85559]">Shop Now</button>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle bg-black text-white border-0">❮</a>
+                        <a href="#slide1" class="btn btn-circle bg-black text-white border-0">❯</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="bg-white rounded-md flex absolute top-[400px] px-16 py-10 gap-14 shadow-2xl">
+                <div class="space-y-4 text-center ">
+                    <img class="w-24 h-20" src="images/fruit1.png" alt="">
+                    <p>Grape</p>
+                </div>
+                <div class="space-y-4 text-center ">
+                    <img class="w-24 h-20" src="images/fruit2.png" alt="">
+                    <p>Orange</p>
+                </div>
+                <div class="space-y-4 text-center ">
+                    <img class="w-24 h-20" src="images/fruit3.png" alt="">
+                    <p>Mango</p>
+                </div>
+                <div class="space-y-4 text-center ">
+                    <img class="w-24 h-20" src="images/fruit4.png" alt="">
+                    <p>Strawberry</p>
+                </div>
+                <div class="space-y-4 text-center ">
+                    <img class="w-24 h-20" src="images/fruit5.png" alt="">
+                    <p>Pomegranate</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Deal of the Day Section -->
+        <section class="mt-20 pb-20">
+
+        </section>
     </main>
     <footer>
 
